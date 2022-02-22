@@ -11,7 +11,7 @@
         </encoder>
     </appender>
 
-<!--    <logger name="config" level="debug"/>-->
+    <logger name="TestDemo" level="error"/>
 
     <root level="info">
         <appender-ref ref="console" />
