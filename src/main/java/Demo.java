@@ -13,9 +13,10 @@ public class Demo {
 //        new Demo().run(array, start, m, n, k);
 //    }
 
-    public void run(Integer[] array, int startRun, int mRun, int nRun, int kRun) {
-        int start = startRun, m = mRun, n = nRun, k = kRun;
-        while (range(array, start, m, n, k) != 0) {
+    public void run(Integer[] array, int m) {
+        int current=array[0], mCurrent=m;
+        for (int i=0;i<array.length;i++) {
+            array[mCurrent]=
             start = nRun - (m > k ? n % k : m);
             m = nRun - (m > k ? (k + n % k)-(k + n % k) / (n % k) * (n % k) : n-n / m * m) - start;
             n = nRun - start;
