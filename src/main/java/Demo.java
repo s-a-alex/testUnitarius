@@ -8,7 +8,7 @@ public class Demo {
             array[pos] = valInsert;
             if (pos != start) {
                 valInsert = valSave;
-                pos = (pos + shift >= array.length ? pos + shift - array.length : pos + shift);
+                pos = (pos + shift) % array.length;
             } else {
                 start++;
                 valInsert = array[start];
